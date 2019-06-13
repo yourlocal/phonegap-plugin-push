@@ -332,7 +332,7 @@
             if (notificationMessage) {            // if there is a pending startup notification
                 dispatch_async(dispatch_get_main_queue(), ^{
                     // delay to allow JS event handlers to be setup
-                    [self performSelector:@selector(notificationReceived) withObject:nil afterDelay: 0.5];
+                    [self performSelector:@selector(notificationReceived) withObject:nil afterDelay: 2.0];
                 });
             }
 
